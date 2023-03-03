@@ -4,7 +4,7 @@ html {
 }
 
 body {
-    font-family: 'Montserrat', 'sans-serif', 'Mansalva', cursive;
+    font-family: 'Mansalva';
 }
 main {
     display: flex;
@@ -12,28 +12,42 @@ main {
     
 }
 h2 {
-    color: black;
-}
-h2, footer {
-    font-family: 'Mansalva';
-    
+    color: white;
 }
 
 button {
     border: none;
+    background-color: #7E53FF;
+    width: 6rem;
+    height: 2rem;
+    border-radius: 5px;
+    color: white;
 }
 
 .itens-comprados {
-text-decoration: line-through;
+    text-decoration: line-through;
 }
 
 .borda-lista {
-    border-bottom:solid 2px greenyellow;
+    border-bottom:solid 2px RGBA( 138, 43, 226, 0.4 );
 }
 
 .inputs {
     display: flex;
     gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+.inputs input {
+    background-color: transparent;
+    border: none;
+    border-bottom: solid 2px RGBA( 138, 43, 226, 0.4 );
+    border-radius: 0;
+    
+}
+.inputs input::placeholder{
+    color: white;
+    font-size: 1.4rem;
+    font-family: 'Mansalva';
 }
 
 input:disabled {
@@ -47,49 +61,55 @@ input {
     background: none;
     color: black;
 }
+
 .listas {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content:center;
-    margin: 0 auto;
+    margin: 5rem auto 0 auto;
     gap: 3rem;
     width: 40rem;
 }
 .listas div {
-    background-color: red;
     width: 10rem;
     height: 5rem;
     border-radius: 10px;
 }
 .natal {
     background-image: url('../img/natal.png');
-    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .ano-novo {
     background-image: url('../img/ano-novo.png');
-    background-size: contain; 
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .feijoada {
     background-image: url('../img/feijoada.png');
-    background-size: contain; 
+    background-size: cover;
+    background-repeat: no-repeat; 
 }
 .churrasco {
     background-image: url('../img/churras.png');
-    background-size: contain; 
+    background-size: cover;
+    background-repeat: no-repeat; 
 }
 .lasanha {
     background-image: url('../img/lasanha.png');
-    background-size: contain; 
+    background-size: cover;
+    background-repeat: no-repeat; 
 }
 .strog {
     background-image: url('../img/strog.png');
-    background-size: contain; 
+    background-size: cover;
+    background-repeat: no-repeat; 
 }
 
 .listas div h1 {
     text-align: center;
-    color: black;
+    color: white;
     font-size: 1.4rem;
     text-transform: uppercase;
     font-weight: bold;
@@ -97,18 +117,18 @@ input {
 }
 
 .teste-fundo {
-    padding: 4rem ;
+    padding: 4rem 3rem ;
     margin: 5rem auto;
     width: 40rem;
-    height: 23rem;
+ 
     
-
-    
-    background: rgba( 255, 255, 255, 0.35 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 13.5px );
-    -webkit-backdrop-filter: blur( 13.5px );
+    background: rgba( 255, 255, 255, 0.2 );
+    box-shadow: 0 0 10px 0 rgba(65, 52, 73, 0.37);
+    backdrop-filter: blur( 15px );
+    -webkit-backdrop-filter: blur( 15px );
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
+
+
 
