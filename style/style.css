@@ -6,6 +6,11 @@ html {
 body {
     font-family: 'Montserrat', 'sans-serif', 'Mansalva', cursive;
 }
+main {
+    display: flex;
+    flex-direction: row;
+    
+}
 h2 {
     color: black;
 }
@@ -47,22 +52,53 @@ input {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content:center;
+    margin: 0 auto;
     gap: 3rem;
     width: 40rem;
 }
-.listas div h1 {
+.listas div {
     background-color: red;
     width: 10rem;
     height: 5rem;
+    border-radius: 10px;
+}
+.natal {
+    background-image: url('../img/natal.png');
+    background-size: contain;
+}
+.ano-novo {
+    background-image: url('../img/ano-novo.png');
+    background-size: contain; 
+}
+.feijoada {
+    background-image: url('../img/feijoada.png');
+    background-size: contain; 
+}
+.churrasco {
+    background-image: url('../img/churras.png');
+    background-size: contain; 
+}
+.lasanha {
+    background-image: url('../img/lasanha.png');
+    background-size: contain; 
+}
+.strog {
+    background-image: url('../img/strog.png');
+    background-size: contain; 
+}
+
+.listas div h1 {
     text-align: center;
     color: black;
+    font-size: 1.4rem;
+    text-transform: uppercase;
     font-weight: bold;
-    border-radius: 10px;
+    padding-top: 1.5rem;
 }
 
 .teste-fundo {
     padding: 4rem ;
-    margin: 5rem auto 0 auto;
+    margin: 5rem auto;
     width: 40rem;
     height: 23rem;
     
