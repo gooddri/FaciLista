@@ -1,5 +1,5 @@
 let listaDeItens = []
-
+let itemAEditar
 
 const form = document.getElementById("form-itens")
 const itensInput = document.getElementById("receber-item")
@@ -135,4 +135,5 @@ const salvarEdicao = () => {
     listaDeItens[itemAEditar].valor = itemEditado.value
     itemAEditar = -1
     exibirItens()
+
 }
