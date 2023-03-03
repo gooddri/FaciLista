@@ -6,9 +6,12 @@ html {
 body {
     font-family: 'Montserrat', 'sans-serif', 'Mansalva', cursive;
 }
-
+h2 {
+    color: black;
+}
 h2, footer {
     font-family: 'Mansalva';
+    
 }
 
 button {
@@ -20,7 +23,7 @@ text-decoration: line-through;
 }
 
 .borda-lista {
-    border-bottom: dotted 2px blue;
+    border-bottom:solid 2px greenyellow;
 }
 
 .inputs {
@@ -39,13 +42,30 @@ input {
     background: none;
     color: black;
 }
+.listas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:center;
+    gap: 3rem;
+    width: 40rem;
+}
+.listas div h1 {
+    background-color: red;
+    width: 10rem;
+    height: 5rem;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    border-radius: 10px;
+}
 
 .teste-fundo {
     padding: 4rem ;
+    margin: 5rem auto 0 auto;
     width: 40rem;
     height: 23rem;
-    margin: 0 auto;
-  
+    
 
     
     background: rgba( 255, 255, 255, 0.35 );
