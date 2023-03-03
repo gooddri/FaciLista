@@ -20,7 +20,11 @@
     <main class="column is-7 hero-body is-offset-one-fifth is-unselectable">
 
         <form id="form-itens" class="has-text-centered"> 
-            <input type="text" class="input has-text-centered" required placeholder="Digite o item que deseja adicionar" id="receber-item">
+            <div class="inputs">
+                <input type="text" class="input has-text-centered" required placeholder="Nome do Item " id="receber-item">
+            
+                <input type="text" class="input has-text-centered" required placeholder="Valor do Item" id="r">
+            </div>    
             <button for="salvar" type="submit" class="mt-2 has-text-weight-bold button is-small is-primary">Salvar item</button>
         </form>
 
@@ -41,7 +45,7 @@
         <footer class="has-text-centered has-text-white has-text-weight-bold">Facilista</footer>
     </main>
 
-    <script src="./main.js"></script>
+    <script src="./js/main.js" type="module"></script>
 </body>
 
 </html>

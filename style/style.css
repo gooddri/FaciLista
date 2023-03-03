@@ -1,7 +1,5 @@
 html {
-    background: linear-gradient(177.52deg, #4574E3 2.11%, #154580 81.34%);
-    background-repeat: no-repeat;
-    height: 100%;
+   background-image: url('../img/FUNDO.png');
 }
 
 body {
@@ -22,6 +20,11 @@ text-decoration: line-through;
 
 .borda-lista {
     border-bottom: dotted 2px blue;
+}
+
+.inputs {
+    display: flex;
+    gap: 0.5rem;
 }
 
 input:disabled {
