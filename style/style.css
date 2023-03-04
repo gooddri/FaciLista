@@ -17,6 +17,10 @@ h2 {
 
 button {
     border: none;
+}
+
+.btn {
+    border: none;
     background-color: #7E53FF;
     width: 6rem;
     height: 2rem;

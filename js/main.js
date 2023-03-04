@@ -137,3 +137,8 @@ const salvarEdicao = () => {
     exibirItens()
 
 }
+
+
+export default {
+
+}
