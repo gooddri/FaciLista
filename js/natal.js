@@ -1,33 +1,70 @@
-const testeNatal = document.getElementById("natal-click")
 
 
-const natal = [
-        {
-            nome: "Peru"
-        },
-        {
-            nome: "Pernil"
-        },
-        {
-            nome: "Rabanada"
-        },
-        {
-            nome: "Pavê"
-        },
-        {
-            nome: "Arroz"
-        },
-    ]
+const API = "https://facilistas2.onrender.com/conteudo"
+
+
+const getApi = async () => {
+   try {
+    const promisse = await fetch(API)
+    const data = await promisse.json()
+    console.log(promisse);
+    console.log(data);
+    return data 
+   }catch (error){
+        console.error(error)
+   }
+}
+getApi().then((TITULO) =>{
     
-export {natal}
-natal
-const nomesNatal = natal.map(tipo => tipo.nome)
+    
+});
 
-testeNatal.addEventListener("click" , (e) =>{
-    e.preventDefault()
-    console.log("me clikaru");
-    console.log(nomesNatal);
-})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const testeNatal = document.getElementById("natal-click")
+
+// const nomesNatal = natal.map(tipo => tipo.valor)
+
+// testeNatal.addEventListener("click" , (e) =>{
+//     e.preventDefault()
+//     listaDeItens.push({
+//         valor:nomesNatal,
+//         checar: false
+//     })
+    
+//     console.log(listaDeItens);
+//     exibirItens()
+// })
+
+
+
+
+
+
 
 
 

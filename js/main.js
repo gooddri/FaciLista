@@ -1,4 +1,4 @@
-let listaDeItens = []
+const listaDeItens = []
 let itemAEditar
 
 const form = document.getElementById("form-itens")
@@ -12,7 +12,7 @@ const atualizaLocalStorage = () => {
 }
 
 if(listaRecuperada) {
-    listaDeItens = JSON.parse(listaRecuperada)
+    let listaDeItens = JSON.parse(listaRecuperada)
     exibirItens()
 }else {
     listaDeItens = []
@@ -139,6 +139,7 @@ const salvarEdicao = () => {
 }
 
 
-export default {
 
-}
+
+export {listaDeItens};
+   
