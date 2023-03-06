@@ -1,4 +1,5 @@
 const listaDeItens = []
+
 let itemAEditar
 
 const form = document.getElementById("form-itens")
@@ -141,5 +142,4 @@ const salvarEdicao = () => {
 
 
 
-export {listaDeItens};
    
