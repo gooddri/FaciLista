@@ -1,6 +1,7 @@
 let listaDeItens = []
 let itemAEditar
 
+
 const form = document.getElementById("form-itens")
 const itensInput = document.getElementById("receber-item")
 const ulItens = document.getElementById("lista-de-itens")
