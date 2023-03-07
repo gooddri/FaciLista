@@ -11,7 +11,7 @@ const getApi = async () => {
    try {
     const promisse = await fetch(API)
     const data = await promisse.json()
-    // console.log(data);
+    console.log(data);
     return data 
    }catch (error){
         console.error(error)
@@ -19,14 +19,14 @@ const getApi = async () => {
 }
 
 let objetoSemanal = null;
-let lista = [];
+let listaDeNatal = [];
 getApi().then((data) => {
 
    
    for (let i = 0; i < data.length; i++) {
      if (data[i].TITULO === 'natal') {
        objetoSemanal = data[i];
-       lista.push(objetoSemanal.DESCRICAO);
+       listaDeNatal.push(objetoSemanal.DESCRICAO);
      }
    }
     
@@ -39,13 +39,13 @@ semanal.addEventListener('click', (e) => {
    e.preventDefault()
    MostraItensNatal()
    enviarItem()
-   console.log(lista);
+  
 })
 
 const enviarItem = () => {
      
-    lista.push({
-        valor: lista,
+    listaDeNatal.push({
+        valor: listaDeNatal,
         checar: false
     })
      
@@ -57,7 +57,7 @@ const MostraItensNatal = () => {
          ulItens.innerHTML = ''
          
         
-         lista.forEach((str, index) => {
+         listaDeNatal.forEach((str, index) => {
             ulItens.innerHTML += `
                     <li class="item-compra is-flex is-justify-content-space-between" data-value="${index}">
                         <div>
@@ -65,7 +65,7 @@ const MostraItensNatal = () => {
                             <input type="text" class="is-size-5" value="${str}" ${index !== Number(itemAEditar) ? 'disabled' : ''} ></input>
                         </div>
                         <div>
-                            ${ index === Number(itemAEditar) ? '<button onclick="salvarEdicao("><i class="fa-regular fa-floppy-disk is-clickable"></i></button>' : '<i class="fa-regular is-clickable fa-pen-to-square editar"></i>'}
+                            ${ index === Number(itemAEditar) ? '<button><i class="fa-regular fa-floppy-disk is-clickable"></i></button>' : '<i class="fa-regular is-clickable fa-pen-to-square editar"></i>'}
                             <i class="fa-solid fa-trash is-clickable deletar"></i>
                         </div>
                         
@@ -86,7 +86,7 @@ function selecionarCheckbox () {
     let inputsCheck = document.querySelectorAll('input[type="checkbox"]')
     inputsCheck.forEach( (i) => {
         i.addEventListener('click', (evento) => {
-            lista[inputsCheck].checar = evento.target.checked
+            listaDeNatal[inputsCheck].checar = evento.target.checked
             MostraItensNatal()
             
         })
@@ -101,7 +101,7 @@ function deletarItens () {
         deletarObjetos.forEach( (i) => {
             i.addEventListener('click', (evento) => {
                 let valorDoElemento = evento.target.parentElement.parentElement.getAttribute('data-value')
-                lista.splice(valorDoElemento, 1)
+                listaDeNatal.splice(valorDoElemento, 1)
                 MostraItensNatal()
                 
             })
@@ -121,13 +121,6 @@ function editarItensLista () {
 
 
 
-function salvarEdicao()  {
-    let itemEditado = document.querySelector(`[data-value="${itemAEditar}"] input[type="text"]`)
-    console.log(itemEditado);
-    lista[itemAEditar].valor = itemEditado.value
-    itemAEditar = -1
-    MostraItensNatal()
-}
 
 
 
