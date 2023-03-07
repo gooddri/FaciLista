@@ -11,7 +11,7 @@ const getApi = async () => {
    try {
     const promisse = await fetch(API)
     const data = await promisse.json()
-    console.log(data);
+    
     return data 
    }catch (error){
         console.error(error)
