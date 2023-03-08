@@ -6,11 +6,11 @@
   
 ---
 
-💻 Projeto  
+## 💻 Projeto  
 
 O projeto final case consiste no grupo decidir qual será o MVP utilizado nessa fase, montar um site com os conteúdos funcionais e
 as funcionalidades deve ser consultadas de uma API.
 
 ---
-🔨 Funcionalidades
+## 🔨 Funcionalidades
 será atualizado
