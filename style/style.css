@@ -104,12 +104,12 @@ input {
     background-repeat: no-repeat; 
 }
 .semanal {
-    background-image: url('../img/lasanha.png');
+    background-image: url('../img/semanal.webp');
     background-size: cover;
     background-repeat: no-repeat; 
 }
 .mensal {
-    background-image: url('../img/strog.png');
+    background-image: url('../img/mensal.jpg');
     background-size: cover;
     background-repeat: no-repeat; 
 }
@@ -150,7 +150,9 @@ input {
     border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
-
+.comprado {
+    color:#7E53FF;
+}
 .nome-topo {
     margin: 5rem auto -5rem auto;
     text-align: center;
